@@ -1,7 +1,256 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 30px;
+  padding: 0;
+}
+
+
+/* ---- typography ---- */
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+body {
+  color: #111;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  line-height: 147%;
+}
+
+h1 {
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -.8px;
+  font-size: 45px;
+}
+
+h2 {}
+
+h3 {}
+
+p {
+  margin: 0;
+  
+}
+
+
+
+/* ---- layout ---- */
+
+#site-header {
+  padding: 30px 0;
+  color: white;
+  background: #111;
+}
+
+#site-footer {
+  color: white;
+  padding: 60px 0;
+  background: #111;
+}
+
+#site-main {
+  margin-bottom: 60px;
+}
+
+.container {
+  margin: 0 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 728px;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+/* ---- components ---- */
+
+.button {
+  width: 100%;
+  background-color: blue;
+  color: #fff;
+  border: 1px solid #fff
+}
+
+.button-alt {
+  color: blue;
+  background-color: #fff;
+}
+
+/* ---- section ---- */
+
+section.testimonials {
+  // ...
+}
+
+section.testimonials .button {
+  margin-bottom: 10px;
+}
+
+/********//************************************/
+
+
+
+@media (max-width: 768px) {
+  .nav-bar-content {
+  display:none;
+  }
+}
+@media (min-width: 768px) {
+  .nav-bar-content {
+    font-size: 30px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-bar-menu-list {
+    padding: 10px;
+  }
+  .hamburger {
+    display: none;
+
+  }
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 20px;
+  align-items: center */
+}
+
+.hamburger {
+  height: 50px;
+  justify-content: flex-end;
+}
+.nav-bar-menu-list {
+  
+}
+
+/* .nav-bar-content li {
+  text-align: center;
+    margin: 15px auto;
+
+} */
+
+.nav-logo {
+  height: 65px;
+  justify-content: flex-start;
+}
+
+.home-talking {
+  height: 275px;
+}
+
+.header-container {
+  
+}
+
+.register {
+  margin-top: 16px;
+  margin-bottom: 25px;
+}
+
+.email-address {
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 12px 0;
+}
+
+.cta {
+  width: 100%;
+  color: white;
+  background-color: #4049AA;
+  padding: 15px;
+  border-radius: 9px;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.sign-in {
+  text-align: center;
+  font-size: 17px;
+  padding-top: 5px;
+}
+
+.company-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.company-container p {
+  padding-bottom: 15px;
+}
+
+.companies {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.company-images {
+  width: 255px;
+  height: 100px;
+  margin-bottom: 50px;
+
+}
+
+.cta-secondary {
+  border-radius: 1px solid #4049AA;
+  color: #4049AA;
+  background-color: white;
+}
+
+.sponsors {
+  background-color: #F5F5F5;
+}
+
+.email-register-container {
+  text-align: center;
+}
+
+.email-register {
+  font-weight: 700;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+ 
+.footer-child {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+  flex-basis: 40%;
+}
+
+.footer-title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.slack-footer-logo {
+  height: 100px;
+}
+
